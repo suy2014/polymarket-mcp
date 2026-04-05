@@ -1,0 +1,48 @@
+{
+  "name": "polymarket-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Polymarket prediction market data — browse, search, and analyze markets with real-time probabilities, orderbooks, and price history",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "polymarket-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "polymarket",
+    "prediction-market",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "llm"
+  ],
+  "author": "pengfyyang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pengfyyang/polymarket-mcp"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  }
+}
